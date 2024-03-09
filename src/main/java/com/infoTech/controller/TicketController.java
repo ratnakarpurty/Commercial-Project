@@ -27,6 +27,7 @@ public class TicketController {
 	public ResponseEntity<Ticket> saveTicketData(@RequestBody Passenger passenger){
 		System.out.println(passenger);
 		System.out.println("New Code Added");
+		System.out.println("New Code changed...");
 		
 		Ticket ticketBooking = service.ticketBooking(passenger);
 		return new ResponseEntity<>(ticketBooking,HttpStatus.CREATED);
